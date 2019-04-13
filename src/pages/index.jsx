@@ -42,13 +42,16 @@ const Index = () => (
       <About offset={1}>
         <Title>few words</Title>
         <AboutDesc>
-          Have been coding for 5 years give or take. Love engineering coding and working with great people. My focus is
-          to work for ideas that can have a positive impact in people's life. My goal is to have an understanding for
-          the business interests and also be a developer who "gets things done".
+          Have been coding for 5 years give or take. Love crafting ideas while working among great people. Interested in
+          projects that can have a positive impact in people's life!
           <br />
-          Apart from coding, I love educating myself in all matters. I believe the more you know about a variety of
-          subjects the more creative you are. More creative input more creative output. I try to always develop and
-          evolve the map I use to navigate through life.
+          <br />
+          If you ask me what is my goal, my answer would be to have an understanding for the business interests and also
+          be a developer who "gets things done".
+          <br />
+          <br />
+          For the rest, I love educating myself in all matters. I believe the more you know about a variety of subjects
+          the more creative you can be. I try to always develop and evolve the map I use to navigate through.
         </AboutDesc>
       </About>
       <Contact offset={2}>

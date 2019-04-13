@@ -36,7 +36,7 @@ const Index = () => (
           hello, <br /> I'm christos.
         </BigTitle>
         <Subtitle>
-          a frontend engineer who cares about end product beyond just writing code that makes it work.
+          a frontend engineer who cares about the end product beyond just writing code that makes it work.
         </Subtitle>
       </Hero>
       <About offset={1}>

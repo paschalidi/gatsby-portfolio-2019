@@ -75,7 +75,7 @@ const Index = () => (
           &copy; 2019
           <br />
           <a href="https://github.com/paschalidi" target="_blank" rel="noopener noreferrer">
-            > Christos Paschalidis
+            Christos Paschalidis
           </a>
         </Footer>
       </Contact>

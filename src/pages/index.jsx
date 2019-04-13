@@ -73,6 +73,7 @@ const Index = () => (
             <a href="https://www.linkedin.com/in/christos-paschalidis/" target="_blank" rel="noopener noreferrer">
               <strong>linkedin</strong>
             </a>
+            .
           </ContactText>
         </Inner>
         <Footer>

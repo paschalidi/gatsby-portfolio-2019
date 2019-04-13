@@ -61,11 +61,11 @@ const Index = () => (
             or
             <br />
             find me through:{' '}
-            <a href="https://www.linkedin.com/in/christos-paschalidis/">
+            <a href="https://www.linkedin.com/in/christos-paschalidis/" target="_blank" rel="noopener noreferrer">
               <strong>linkedin</strong>
             </a>{' '}
             &{' '}
-            <a href="https://github.com/paschalidi">
+            <a href="https://github.com/paschalidi" target="_blank" rel="noopener noreferrer">
               <strong>github</strong>
             </a>
             .
@@ -74,7 +74,9 @@ const Index = () => (
         <Footer>
           &copy; 2019
           <br />
-          <a href="https://github.com/paschalidi"> Christos Paschalidis</a>
+          <a href="https://github.com/paschalidi" target="_blank" rel="noopener noreferrer">
+            > Christos Paschalidis
+          </a>
         </Footer>
       </Contact>
     </Parallax>

@@ -60,20 +60,19 @@ const Index = () => (
         <Inner>
           <Title>you liked what you read?</Title>
           <ContactText>
+            dont hesitate to reach me via{' '}
             <a href="mailto:paschalidi@outlook.com">
-              <strong>say hi</strong>
-            </a>{' '}
-            or
-            <br />
-            find me through:{' '}
-            <a href="https://www.linkedin.com/in/christos-paschalidis/" target="_blank" rel="noopener noreferrer">
-              <strong>linkedin</strong>
-            </a>{' '}
-            &{' '}
+              <strong>email</strong>
+            </a>
+            ! <br />
+            follow me on{' '}
             <a href="https://github.com/paschalidi" target="_blank" rel="noopener noreferrer">
               <strong>github</strong>
+            </a>{' '}
+            &{' '}
+            <a href="https://www.linkedin.com/in/christos-paschalidis/" target="_blank" rel="noopener noreferrer">
+              <strong>linkedin</strong>
             </a>
-            .
           </ContactText>
         </Inner>
         <Footer>

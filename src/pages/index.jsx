@@ -16,7 +16,7 @@ import About from '../views/About'
 import Contact from '../views/Contact'
 
 const AboutDesc = styled.p`
-  ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
+  ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans text-justify`};
 `
 
 const ContactText = styled.p`
@@ -41,7 +41,7 @@ const Index = () => (
       </Hero>
       <About offset={1}>
         <Title>few words</Title>
-        <AboutDesc>
+        <AboutDesc style={{ paddingTop: 0 }}>
           <p>
             Have been coding for 5 years give or take. Love crafting ideas while working among great people. Interested
             in projects that can have a positive impact in people's life!

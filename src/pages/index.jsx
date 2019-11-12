@@ -22,7 +22,7 @@ const AboutDesc = styled.p`
 `
 
 const ContactText = styled.p`
-  ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
+  ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl xxl:w-2/4`};
 `
 
 const FooterFlex = styled.div`
@@ -37,7 +37,8 @@ const Footer = styled.footer`
   @media (max-width: 768px) {
     width: 100vw;
   }
-  ${tw`text-center text-grey absolute pin-b p-6 font-sans text-sm sm:text-sm`};
+
+  ${tw`text-center text-grey absolute pin-b p-6 font-sans text-sm sm:text-sm xxl:w-3/4`};
 `
 
 const Index = () => (
@@ -81,7 +82,7 @@ const Index = () => (
             If you need a hand with a project, I have two!
             <br />
             Just feel free to reach out to me,
-            <br /> either{' '}
+            either{' '}
             <a href="mailto:paschalidi@outlook.com">
               <strong>drop me a line</strong>
             </a>{' '}

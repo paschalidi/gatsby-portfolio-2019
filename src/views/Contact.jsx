@@ -16,8 +16,9 @@ const WaveWrapper = styled.div`
 const InnerWave = styled.div`
   ${tw`relative h-full`};
   svg {
+    transform: scaleX(-1);
     width: 100%;
-    height: 40vh;
+    height: 50vh;
   }
   path {
     ${waveAnimation('20s')};

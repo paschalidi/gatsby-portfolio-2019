@@ -9,21 +9,16 @@ import SVG from '../components/SVG'
 
 const Projects = ({ children, offset }) => (
   <>
-    <DividerMiddle
-      bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
-      speed={-0.2}
-      offset={`${offset}.1`}
-      factor={2}
-    />
-    <Content speed={0.4} offset={`${offset}.2`} factor={2}>
+    <DividerMiddle bg="#030303" speed={-0.2} offset={`${offset}.1`} factor={2} />
+    <Content speed={0.4} offset={offset} factor={2}>
       <Inner>{children}</Inner>
     </Content>
-    <Divider speed={0.1} offset={offset} factor={2}>
+    <Divider speed={0.1} offset={`${offset}.2`} factor={2}>
       <UpDown>
         <SVG icon="box" width={6} fill={colors.white} left="85%" top="75%" />
         <SVG icon="upDown" width={8} fill={colors.teal} left="70%" top="20%" />
         <SVG icon="triangle" width={8} stroke={colors.orange} left="25%" top="5%" />
-        <SVG icon="circle" hiddenMobile width={24} fill={colors.white} left="17%" top="60%" />
+        <SVG icon="circle" hiddenMobile width={24} fill={colors.pink} left="17%" top="60%" />
       </UpDown>
       <UpDownWide>
         <SVG icon="arrowUp" hiddenMobile width={16} fill={colors.green} left="20%" top="90%" />

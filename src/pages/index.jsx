@@ -14,74 +14,110 @@ import { Title, BigTitle, Subtitle } from '../elements/Titles'
 import Hero from '../views/Hero'
 import About from '../views/About'
 import Contact from '../views/Contact'
+import Projects from '../views/Projects'
+import ModernTechnologiesList from '../components/IconsList'
 
 const AboutDesc = styled.p`
-  ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans text-justify`};
+  ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans`};
 `
 
 const ContactText = styled.p`
   ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
 `
 
+const FooterFlex = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
 const Footer = styled.footer`
-  ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
+  width: 60vw;
+  margin-top: 20px;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+  }
+  ${tw`text-center text-grey absolute pin-b p-6 font-sans text-sm sm:text-sm`};
 `
 
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={3}>
+    <Parallax pages={4}>
       <Hero offset={0}>
         <BigTitle>
-          hello, <br /> I'm christos.
+          hello <br /> I'm christos,
         </BigTitle>
-        <Subtitle>
-          a frontend engineer who cares about the end product beyond just writing code that makes it work.
-        </Subtitle>
+        <Subtitle>an engineer who crafts web solutions with modern technologies</Subtitle>
       </Hero>
+
       <About offset={1}>
-        <Title>few words</Title>
+        <Title>experience & passion</Title>
         <AboutDesc style={{ paddingTop: 0 }}>
           <p>
-            Have been coding for 5 years give or take. Love crafting ideas while working among great people. Interested
-            in projects that can have a positive impact in people's life!
+            The last half decade I have worked in startups and commercial industries, building beautifully designed and
+            crafted digital user experiences & innovative end-to-end solutions.
           </p>
           <p>
-            If you ask me what is my goal, my answer would be to have an understanding for the business interests and
-            also be a developer who "gets things done".
+            In this journey except from building user-centric applications, I got to know how to develop ideas. Taking a
+            concept though research, design, testing & implementation.
           </p>
           <p>
-            For the rest, I love educating myself in all matters. I believe the more you know about a variety of
-            subjects the more creative you can be. I try to always develop and evolve the map I use to navigate through.
+            Whether I’m building something from scratch, or optimizing a product, I make sure the project reflects my
+            creativity, attention to detail and appeal for delightful design and user experience.
           </p>
         </AboutDesc>
       </About>
-      <Contact offset={2}>
+
+      <Projects offset={2}>
+        <Title>modern technologies</Title>
+        <ModernTechnologiesList />
+      </Projects>
+
+      <Contact offset={3}>
         <Inner>
-          <Title>you liked what you read?</Title>
+          <Title>want to discuss a project or collaborate?</Title>
           <ContactText>
-            dont hesitate to reach me via{' '}
+            If you need a hand with a project, I have two!
+            <br />
+            Just feel free to reach out to me,
+            <br /> either{' '}
             <a href="mailto:paschalidi@outlook.com">
-              <strong>email</strong>
-            </a>
-            ! <br />
-            follow me on{' '}
-            <a href="https://github.com/paschalidi" target="_blank" rel="noopener noreferrer">
-              <strong>github</strong>
+              <strong>drop me a line</strong>
             </a>{' '}
-            &{' '}
-            <a href="https://www.linkedin.com/in/christos-paschalidis/" target="_blank" rel="noopener noreferrer">
-              <strong>linkedin</strong>
+            or{' '}
+            <a href="tel:004917645732805">
+              <strong>give me a call!</strong>
             </a>
-            .
+            <br />
+            <br />
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2019
+          <div>
+            <a href="https://github.com/paschalidi" target="_blank" rel="noopener noreferrer">
+              Christos Paschalidis
+            </a>{' '}
+            <span>&copy; 2019</span>
+          </div>
           <br />
-          <a href="https://github.com/paschalidi" target="_blank" rel="noopener noreferrer">
-            Christos Paschalidis
-          </a>
+          <br />
+          <FooterFlex>
+            <a href="https://www.linkedin.com/in/christos-paschalidis/" target="_blank" rel="noopener noreferrer">
+              <strong>linkedin</strong>
+            </a>
+            <br />
+            <a href="https://github.com/paschalidi" target="_blank" rel="noopener noreferrer">
+              <strong>github</strong>
+            </a>
+            <br />
+            <a href="https://www.instagram.com/paschalidis_chris/" target="_blank" rel="noopener noreferrer">
+              <strong>instagram</strong>
+            </a>
+            <a href="mailto:paschalidi@outlook.com">
+              <strong>e-mail</strong>
+            </a>
+          </FooterFlex>
         </Footer>
       </Contact>
     </Parallax>

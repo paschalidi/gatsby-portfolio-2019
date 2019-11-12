@@ -82,7 +82,7 @@ const Index = () => (
             If you need a hand with a project, I have two!
             <br />
             Just feel free to reach out to me,
-            either{' '}
+            either <br />
             <a href="mailto:paschalidi@outlook.com">
               <strong>drop me a line</strong>
             </a>{' '}
